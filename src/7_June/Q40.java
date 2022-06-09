@@ -3,7 +3,7 @@ import java.util.*;
 public class Q40 {
 
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
         Scanner sc = new Scanner(System.in);
         try{
             try{
@@ -17,7 +17,12 @@ public class Q40 {
                 System.out.println("Invalid Input");
             }
 
-        }catch(Exception e){
+        }
+        catch (ArithmeticException e)
+        {
+            System.out.println("Y not to be equal to zero provide another value for y");
+        }
+        catch(Exception e){
             System.out.println(e);
         }
 
