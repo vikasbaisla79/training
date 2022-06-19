@@ -7,8 +7,13 @@ public class Q42 {
         String str = sc.next();
         String result = new String("");
         for(int i=0;i<str.length();i++){
-            if(Character.getNumericValue(str.charAt(i)) < 5) result += 0;
-            else result += 1;
+            if(Character.getNumericValue(str.charAt(i)) < 5) {
+                result += 0;
+            }
+            else
+            {
+                result += 1;
+            }
         }
         System.out.println(result);
     }
